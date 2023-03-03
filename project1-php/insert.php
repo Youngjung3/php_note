@@ -1,8 +1,8 @@
 <?php
     // data를 db에 저장하려면 DB 컴퓨터에 접속을 해야됨
     // mysqli_connect("서버주소(localhost)","사용자아이디", "비번", "db명");
-    $conn=mysqli_connect("localhost","youngjung","willy153!","youngjung");//서버
-    // $conn=mysqli_connect("localhost","root","","mango_board");//로컬
+    // $conn=mysqli_connect("localhost","youngjung","willy153!","youngjung");//서버
+    $conn=mysqli_connect("localhost","root","","mango_board");//로컬
     //DB서버의 접속정보
 
     if(!$conn){

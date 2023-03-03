@@ -11,8 +11,8 @@
     <h2>검색결과</h2>
     <ul>
         <?php
-            $conn=mysqli_connect("localhost","youngjung","willy153!","youngjung");//서버
-            // $conn=mysqli_connect("localhost","root","","mango_board");
+            // $conn=mysqli_connect("localhost","youngjung","willy153!","youngjung");//서버
+            $conn=mysqli_connect("localhost","root","","mango_board");
             if(!$conn){
                 echo "db연결실패";
             }else{

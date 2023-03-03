@@ -1,7 +1,7 @@
 <?php
     $title="로그인페이지";
     include('inc/header.php');
-    require('inc/function.php');
+    // require('inc/function.php');
     if($_SERVER['REQUEST_METHOD']=='POST'){
         output($_POST);
     }
@@ -38,23 +38,26 @@
     </header>
     <div class="login_bg"></div>
     <div class="login" id="login">
+      <h2>로그인</h2>
       <div class="inner9">
         <form action="" method="post">
-            <p>
-                <label for="email">이메일</label>
-                <input type="email" name="email" id="email" autocomplete="off">
-            </p>
-            <p>
-                <label for="password">비밀번호</label>
-                <input type="password" name="password" id="password" autocomplete="off">
-            </p>
-            <p><input type="submit" name="login" value="로그인"></p>
+            <div class="login_inner">
+              <p>
+                  <label for="email">이메일&nbsp;&nbsp;&nbsp;</label>
+                  <input type="email" name="email" id="email" autocomplete="off" placeholder=" 이메일 입력하세요">
+              </p>
+              <p>
+                  <label for="password">비밀번호</label>
+                  <input type="password" name="password" id="password" autocomplete="off" placeholder=" 비밀번호를 입력하세요">
+              </p>
+            </div>
+            <p><input type="submit" name="login" value="로그인" class="login_button"></p>
         </form>
       </div>
     </div>
   <?php
     require('inc/footer.php');
-    require('inc/function.php');
+    // require('inc/function.php');
   ?>
   </body>
 </html>

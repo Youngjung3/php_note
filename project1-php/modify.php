@@ -1,6 +1,6 @@
 <?php
-    $conn=mysqli_connect("localhost","youngjung","willy153!","youngjung");//서버
-    // $conn=mysqli_connect("localhost","root","","mango_board");//로컬
+    // $conn=mysqli_connect("localhost","youngjung","willy153!","youngjung");//서버
+    $conn=mysqli_connect("localhost","root","","mango_board");//로컬
     //DB서버의 접속정보
 
     if(!$conn){

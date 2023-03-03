@@ -11,8 +11,8 @@
     <h2>글목록</h2>
     <ul>
         <?php
-            // $conn=mysqli_connect("localhost","root","","mango_board");
-            $conn=mysqli_connect("localhost","youngjung","willy153!","youngjung");//서버
+            $conn=mysqli_connect("localhost","root","","mango_board");
+            // $conn=mysqli_connect("localhost","youngjung","willy153!","youngjung");//서버
             if(!$conn){
                 echo "db연결실패";
             }else{
